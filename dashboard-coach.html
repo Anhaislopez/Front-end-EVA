@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard Coach – SportClub</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/dashboard-coach.css">
+</head>
+<body class="dashboard-body">
+
+  <!-- HEADER -->
+  <header class="dashboard-header">
+    <div class="logo">
+      <img src="image.png" alt="SportClub Logo">
+    </div>
+    <nav>
+      <a href="#">Inicio</a>
+      <a href="#">Mis Alumnos</a>
+      <a href="#">Mi Horario</a>
+      <a href="#">Reportes</a>
+    </nav>
+    <div class="acciones">
+      <button class="btn-editar">Editar Perfil</button>
+      <button class="btn-salir" onclick="window.location.href='login.html'">Cerrar Sesión</button>
+    </div>
+  </header>
+
+  <!-- CONTENIDO -->
+  <main class="dashboard-contenido">
+
+    <h2 class="bienvenida">Panel de Entrenador</h2>
+    <p class="subtitulo">Bienvenido, Coach Anawiskis</p>
+
+    <!-- GRID 2 columnas -->
+    <div class="grid2">
+
+      <!-- Mis Alumnos -->
+      <div class="seccion">
+        <h3>Mis Alumnos</h3>
+        <div class="fila-clase">
+          <span>Ana1 – ana1@sportclub.cl</span>
+          <button class="btn-mini">Ver Progreso</button>
+        </div>
+        <div class="fila-clase">
+          <span>Anawiskis – anawiskis@sportclub.cl</span>
+          <button class="btn-mini">Ver Progreso</button>
+        </div>
+        <div class="fila-clase">
+          <span>Ana3 – ana3@sportclub.cl</span>
+          <button class="btn-mini">Ver Progreso</button>
+        </div>
+        <div class="fila-clase">
+          <span>Prueba1 – prueba1@sportclub.cl</span>
+          <button class="btn-mini">Ver Progreso</button>
+        </div>
+      </div>
+
+      <!-- Mi Horario -->
+      <div class="seccion">
+        <h3>Mi Horario</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Día</th>
+              <th>Clase</th>
+              <th>Hora</th>
+              <th>Sala</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Lunes</td>
+              <td>Spinning</td>
+              <td>18:00</td>
+              <td>Sala A</td>
+            </tr>
+            <tr>
+              <td>Martes</td>
+              <td>Spinning</td>
+              <td>12:00</td>
+              <td>Sala A</td>
+            </tr>
+            <tr>
+              <td>Miércoles</td>
+              <td>CrossFit</td>
+              <td>11:00</td>
+              <td>Sala B</td>
+            </tr>
+            <tr>
+              <td>Jueves</td>
+              <td>CrossFit</td>
+              <td>11:00</td>
+              <td>Sala B</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+    </div>
+
+    <!-- Clases asignadas -->
+    <div class="seccion">
+      <h3>Clases Asignadas</h3>
+      <ul class="lista-simple">
+        <li>Entrenamiento funcional – Martes 19:00</li>
+        <li>Crossfit avanzado – Jueves 20:00</li>
+        <li>Funcional principiantes – Sábado 09:00</li>
+      </ul>
+    </div>
+
+  </main>
+
+</body>
+</html>

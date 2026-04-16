@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard Usuario – SportClub</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/dashboard-usuario.css">
+</head>
+<body class="dashboard-body">
+
+  <!-- HEADER -->
+  <header class="dashboard-header">
+    <div class="logo">
+      <img src="image.png" alt="SportClub Logo">
+    </div>
+    <nav>
+      <a href="#">Inicio</a>
+      <a href="#">Clases</a>
+      <a href="#">Reservas</a>
+      <a href="#">Mi Progreso</a>
+    </nav>
+    <div class="acciones">
+      <button class="btn-editar">Editar Perfil</button>
+      <button class="btn-salir" onclick="window.location.href='login.html'">Cerrar Sesión</button>
+    </div>
+  </header>
+
+  <!-- CONTENIDO -->
+  <main class="dashboard-contenido">
+
+    <h2 class="bienvenida">Bienvenido a SportClub</h2>
+
+    <!-- FILA SUPERIOR: 3 cards -->
+    <div class="grid3">
+
+      <!-- Perfil -->
+      <div class="seccion">
+        <h3>Mi Perfil</h3>
+        <div class="avatar"></div>
+        <p><strong>Nombre:</strong> Ana1</p>
+        <p><strong>Email:</strong> ana1@sportclub.cl</p>
+        <p><strong>Objetivos:</strong> Mejorar resistencia y fuerza</p>
+      </div>
+
+      <!-- Progreso -->
+      <div class="seccion">
+        <h3>Progreso</h3>
+        <div class="progreso-grid">
+          <div class="circulo">
+            <span>75%</span>
+          </div>
+          <ul class="lista-simple">
+            <li>Clases asistidas: 18</li>
+            <li>Meta mensual: 24</li>
+            <li>Racha actual: 5 días</li>
+            <li>Calorías aprox: 4.200</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Clases disponibles pequeño -->
+      <div class="seccion">
+        <h3>Clases Disponibles</h3>
+        <div class="fila-clase">
+          <span>Spinning</span>
+          <button class="btn-mini">Reservar</button>
+        </div>
+        <div class="fila-clase">
+          <span>CrossFit</span>
+          <button class="btn-mini">Reservar</button>
+        </div>
+        <div class="fila-clase">
+          <span>Yoga</span>
+          <button class="btn-mini">Reservar</button>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- FILA INFERIOR: tabla de clases -->
+    <div class="seccion">
+      <h3>Todas las Clases Disponibles</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Clase</th>
+            <th>Día / Hora</th>
+            <th>Tipo</th>
+            <th>Acción</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Spinning</td>
+            <td>Lunes / 18:00</td>
+            <td>Cardio</td>
+            <td><button class="btn-mini">Reservar</button></td>
+          </tr>
+          <tr>
+            <td>CrossFit</td>
+            <td>Miércoles / 10:00</td>
+            <td>Funcional</td>
+            <td><button class="btn-mini">Reservar</button></td>
+          </tr>
+          <tr>
+            <td>HIIT</td>
+            <td>Viernes / 19:00</td>
+            <td>Intensidad</td>
+            <td><button class="btn-mini">Reservar</button></td>
+          </tr>
+          <tr>
+            <td>Yoga</td>
+            <td>Martes / 07:00</td>
+            <td>Flexibilidad</td>
+            <td><button class="btn-mini">Reservar</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+  </main>
+
+</body>
+</html>

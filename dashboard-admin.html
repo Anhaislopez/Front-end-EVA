@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard Admin – SportClub</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/dashboard-admin.css">
+</head>
+<body class="dashboard-body">
+
+  <!-- HEADER -->
+  <header class="dashboard-header">
+    <div class="logo">
+      <img src="image.png" alt="SportClub Logo">
+    </div>
+    <nav>
+      <a href="#">Inicio</a>
+      <a href="#">Usuarios</a>
+      <a href="#">Estadísticas</a>
+      <a href="#">Configuración</a>
+    </nav>
+    <div class="acciones">
+      <button class="btn-editar">Editar Perfil</button>
+      <button class="btn-salir" onclick="window.location.href='login.html'">Cerrar Sesión</button>
+    </div>
+  </header>
+
+  <!-- CONTENIDO -->
+  <main class="dashboard-contenido">
+
+    <h2 class="bienvenida">Panel de Administración – Anhais</h2>
+
+    <!-- GRID 3 columnas -->
+    <div class="grid3">
+
+      <!-- Gestión de usuarios -->
+      <div class="seccion">
+        <h3>Gestión de Usuarios</h3>
+        <div class="fila-clase">
+          <span>Ana1</span>
+          <button class="btn-mini">Editar</button>
+        </div>
+        <div class="fila-clase">
+          <span>Anawiskis</span>
+          <button class="btn-mini">Editar</button>
+        </div>
+        <div class="fila-clase">
+          <span>Ana3</span>
+          <button class="btn-mini">Editar</button>
+        </div>
+        <div class="fila-clase">
+          <span>Prueba1</span>
+          <button class="btn-mini">Editar</button>
+        </div>
+      </div>
+
+      <!-- Estadísticas -->
+      <div class="seccion">
+        <h3>Estadísticas del Sistema</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Nombre</th>
+              <th>Email</th>
+              <th>Rol</th>
+              <th>Acción</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Ana1</td>
+              <td>ana1@sportclub.cl</td>
+              <td>Usuario</td>
+              <td><button class="btn-mini">Editar</button></td>
+            </tr>
+            <tr>
+              <td>Anawiskis</td>
+              <td>anawiskis@sportclub.cl</td>
+              <td>Coach</td>
+              <td><button class="btn-mini">Editar</button></td>
+            </tr>
+            <tr>
+              <td>Ana3</td>
+              <td>ana3@sportclub.cl</td>
+              <td>Usuario</td>
+              <td><button class="btn-mini">Editar</button></td>
+            </tr>
+            <tr>
+              <td>Prueba1</td>
+              <td>prueba1@sportclub.cl</td>
+              <td>Usuario</td>
+              <td><button class="btn-mini">Editar</button></td>
+            </tr>
+            <tr>
+              <td>Anhais</td>
+              <td>anhais@sportclub.cl</td>
+              <td>Admin</td>
+              <td><button class="btn-mini">Editar</button></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Reportes -->
+      <div class="seccion">
+        <h3>Reportes Generales</h3>
+        <div class="fila-clase">
+          <span>Informe Mensual</span>
+          <button class="btn-mini">Descargar</button>
+        </div>
+        <div class="fila-clase">
+          <span>Informe Abril</span>
+          <button class="btn-mini">Descargar</button>
+        </div>
+        <div class="fila-clase">
+          <span>Informe Marzo</span>
+          <button class="btn-mini">Descargar</button>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Cards informativas -->
+    <div class="seccion">
+      <h3>Panel de Control</h3>
+      <div class="cards">
+        <div class="card">
+          <strong>48</strong>
+          <p>Usuarios activos</p>
+        </div>
+        <div class="card">
+          <strong>6</strong>
+          <p>Coaches registrados</p>
+        </div>
+        <div class="card">
+          <strong>12</strong>
+          <p>Clases del día</p>
+        </div>
+        <div class="card">
+          <strong>35</strong>
+          <p>Reservas hoy</p>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recuperar contraseña – SportClub</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="contenedor-form">
+    <div class="caja-form">
+      <img src="image.png" alt="SportClub Logo">
+      <h2>Recuperar contraseña</h2>
+      <p style="font-size: 13px; color: var(--gris-texto); margin-bottom: 20px;">
+        Ingresa tu correo y te enviaremos las instrucciones para recuperar tu contraseña.
+      </p>
+
+      <input type="email" placeholder="Correo electrónico">
+
+      <button class="btn-principal" onclick="mostrarMensaje()">Enviar</button>
+
+      <div class="mensaje-confirmacion" id="mensaje">
+        Correo enviado. Revisa tu bandeja de entrada.
+      </div>
+
+      <div class="links">
+        <p><a href="login.html">Volver al inicio de sesión</a></p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function mostrarMensaje() {
+      document.getElementById('mensaje').style.display = 'block';
+    }
+  </script>
+
+</body>
+</html>

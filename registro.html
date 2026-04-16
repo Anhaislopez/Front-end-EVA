@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registro – SportClub</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="contenedor-form">
+    <div class="caja-form">
+      <img src="image.png" alt="SportClub Logo">
+      <h2>Crear cuenta</h2>
+
+      <input type="text" placeholder="Nombre completo">
+      <input type="email" placeholder="Correo electrónico">
+      <input type="password" placeholder="Contraseña">
+      <input type="text" placeholder="Deporte o interés (opcional)">
+
+      <button class="btn-principal" onclick="mostrarMensaje()">Registrarse</button>
+
+      <div class="mensaje-confirmacion" id="mensaje">
+        ¡Cuenta creada correctamente! Ya puedes iniciar sesión.
+      </div>
+
+      <div class="links">
+        <p>¿Ya tienes cuenta? <a href="login.html">Inicia sesión aquí</a></p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function mostrarMensaje() {
+      document.getElementById('mensaje').style.display = 'block';
+    }
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Iniciar sesión – SportClub</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .contenedor-menu {
+      position: relative;
+      width: 100%;
+    }
+
+    .menu-perfiles {
+      display: none;
+      position: absolute;
+      top: 110%;
+      left: 0;
+      width: 100%;
+      background-color: var(--blanco);
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      z-index: 10;
+    }
+
+    .menu-perfiles a {
+      display: block;
+      padding: 12px 16px;
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--morado);
+      border-bottom: 1px solid #eee;
+    }
+
+    .menu-perfiles a:last-child {
+      border-bottom: none;
+    }
+
+    .menu-perfiles a:hover {
+      background-color: var(--gris-claro);
+      color: var(--amarillo);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="contenedor-form">
+    <div class="caja-form">
+      <img src="image.png" alt="SportClub Logo">
+      <h2>Iniciar sesión</h2>
+
+      <input type="email" placeholder="Correo electrónico">
+      <input type="password" placeholder="Contraseña">
+
+      <div class="contenedor-menu">
+        <button class="btn-principal" onclick="toggleMenu()">Ingresar</button>
+        <div class="menu-perfiles" id="menuPerfiles">
+          <a href="dashboard-usuario.html">Ingresar como Usuario</a>
+          <a href="dashboard-coach.html">Ingresar como Coach</a>
+          <a href="dashboard-admin.html">Ingresar como Admin</a>
+        </div>
+      </div>
+
+      <div class="links">
+        <p><a href="recuperar.html">¿Olvidaste tu contraseña?</a></p>
+        <p>¿No tienes cuenta? <a href="registro.html">Regístrate aquí</a></p>
+        <p><a href="inicio.html">← Volver al inicio</a></p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function toggleMenu() {
+      var menu = document.getElementById('menuPerfiles');
+      menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+    }
+
+    document.addEventListener('click', function(e) {
+      if (!e.target.closest('.contenedor-menu')) {
+        document.getElementById('menuPerfiles').style.display = 'none';
+      }
+    });
+  </script>
+
+</body>
+</html>
